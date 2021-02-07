@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import Button from './components/ContainedButtons'
+import Api from './components/Api'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Button/>
+        <Api/>
       </header>
     </div>
   );

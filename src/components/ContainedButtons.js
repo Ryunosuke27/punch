@@ -9,22 +9,15 @@ const useStyles = makeStyles((theme) => ({
         },
     },
 }));
-const ContainedButtons = () => {
+const ContainedButtons = (props) => {
     const classes = useStyles();
     return (
         <div className={classes.root}>
-            <Button variant="contained">Default</Button>
-            <Button variant="contained" color="primary">
-                Primary
-            </Button>
-            <Button variant="contained" color="secondary">
-                Secondary
-            </Button>
-            <Button variant="contained" disabled>
-                Disabled
-            </Button>
-            <Button variant="contained" color="primary" href="#contained-buttons">
-                Link
+            <Button 
+            variant="contained" 
+            color="primary"
+            onClick={() => props.punchMethod()}>
+                {props.text}
             </Button>
         </div>
     )
