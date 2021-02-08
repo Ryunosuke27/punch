@@ -3,22 +3,25 @@ import axios from 'axios';
 import Buttons from './ContainedButtons'
 
 const Api = () => {
-    const punchMethod = () =>{
+    const punchMethod = (id) =>{
+        const req = {punchKind: id}
         axios.post("https://ed1qsxnwla.execute-api.ap-northeast-1.amazonaws.com/prod/punch",
+            req,
             {
-                punchKind: "1"
-            }
-        );
+                headers: {
+                  "Content-Type": "application/json",
+                },
+            });
     }
     return (
         <div>
             <Buttons
                 text = "In"
-                punchMethod = {() => punchMethod()}
+                punchMethod = {() => punchMethod("1")}
             />
             <Buttons
                 text = "Out"
-                punchMethod = {() => punchMethod()}
+                punchMethod = {() => punchMethod("2")}
             />
         </div>
     )
