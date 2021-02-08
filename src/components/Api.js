@@ -4,15 +4,16 @@ import Buttons from './ContainedButtons'
 
 const Api = () => {
     const punchMethod = (id) =>{
-        const req = {punchKind: id}
-        axios.post("https://ed1qsxnwla.execute-api.ap-northeast-1.amazonaws.com/prod/punch",
-            req,
-            {
-                headers: {
-                  "Content-Type": "application/json",
-                },
+        const api = "https://ed1qsxnwla.execute-api.ap-northeast-1.amazonaws.com/prod/punch"
+        const data = {"punchKind": id}
+        
+        axios
+            .post(api,data)
+            .then((response) =>{
+                console.log(response);
             });
     }
+    
     return (
         <div>
             <Buttons
