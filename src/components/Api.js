@@ -6,7 +6,7 @@ const Api = () => {
     const punchMethod = (id) =>{
         axios.post("https://ed1qsxnwla.execute-api.ap-northeast-1.amazonaws.com/prod/punch",
             {
-                punchKind: id
+                punchKind: "1"
             }
         )
     }
