@@ -3,9 +3,12 @@ import axios from 'axios';
 import Buttons from './ContainedButtons'
 
 const Api = () => {
-    const punchMethod = (punchKind) =>{
+    const punchMethod = (id) =>{
         axios.post("https://ed1qsxnwla.execute-api.ap-northeast-1.amazonaws.com/prod/punch",
-        punchKind)
+            {
+                punchKind: id
+            }
+        )
     }
     return (
         <div>
