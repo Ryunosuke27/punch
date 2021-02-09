@@ -13,7 +13,7 @@ const PunchContent = () => {
             <h1 className="title">Punchの使い方</h1>
             <p　className="contents">勤務開始、終了時にそれぞれのボタンを押すだけで勤務時間を記録してくれます。</p>
             <br/>
-            <p className="contents">また「ダウンロードボタンを押す」or「月末になる」と勤務表(CSVファイル)のダウンロードリンクがメールで送られてきます。</p>
+            <p className="contents">またダウンロードボタンを押すと勤務表(CSVファイル)のダウンロードリンクがメールで送られてきます。(48時間を超えると使用出来なくなります。)</p>
         </div>
     )
 }
