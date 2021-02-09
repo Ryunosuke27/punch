@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* 最上位 */
+.App{
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  position:relative;
+  box-sizing: border-box;
+}
+
+/* ヘッダー */
+.header{
+}
+
+/* ボディ */
+.body{
+  }
+.h1{
+  font-size:50px;
+  margin: 0;
+}
+.menu{
+  padding-right: 5vw;
+}
+
+/* コンテンツ */
+/* ホーム */
+.homeContent{
+  padding: 0;
+  background-color: dimgray;
+  color:white;
+  height: 70vh;
+  padding-top: 20vh;
+  padding-left:30vw;
+
+}
+/* punchとは */
+.punchContent{
+  height: 92vh;
+  background-color: dimgray;
+  color: white;
+}
+.title{
+  margin: 0px;
+  padding: 8vh 15vw;
+  font-size:50px;
+}
+.contents{
+  margin: 0px;
+  padding: 0px 15vw;
+  font-size:18px;
+}
+/* 自己紹介 */
+.profileContent{
+  height: 92vh;
+  background-color: dimgray;
+  color: white;
+}
+/* インフラ構成図 */
+.infrastructureContent{
+  background-color: dimgray;
+  height:92vh;
+  text-align: center;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  display: flex;
+}
+/* 今後の課題 */
+.featureTaskContent{
+  height: 92vh;
+  background-color: dimgray;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* フッター */
+.footer{
+}
+.copy-right{
+  padding-left: 70vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img{
+  width:100%;
+  max-width: 100%;
+  height: auto;
 }
