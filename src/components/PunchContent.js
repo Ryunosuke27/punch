@@ -4,7 +4,7 @@ const PunchContent = () => {
     return (
         <div className = "punchContent">
             <h1 className="title">Punchとは</h1>
-            <p　className="contents">いわゆる勤怠管理アプリです。</p>
+            <p　className="contents">勤怠管理アプリです。</p>
             <br/>
             <p className="contents">Punchは「毎日勤務時間を記録し、月末になると月間稼働時間を計算する」</p>
             <br/>
